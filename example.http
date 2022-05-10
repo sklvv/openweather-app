@@ -1,0 +1,4 @@
+# GET https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=dde4b5b2e6b7ec4f629ae01265eaa87d&lang=ru
+
+
+GET https://api.openweathermap.org/data/2.5/weather?q=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C&appid=dde4b5b2e6b7ec4f629ae01265eaa87d&units=metric

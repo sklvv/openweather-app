@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+### Пакеты
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[DoteEnv]
+[Axios]
+[Redux]
+[ReactRouterDom] ???
 
-## Available Scripts
+### Функционал
 
-In the project directory, you can run:
+1. По умолчанию отображать инфу по гео
+2. Прогноз на день (по часам, температура и иконка)
+3. Прогноз на неделю (мин и макс, описание)
+4. Поиск по городу
+5. Фон меняется в зависимости от времени суток
 
-### `npm start`
+### Инфа
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Город
+2. Температура
+3. Ощущается как
+4. Описание (облачно, ясно и т.д.)
+5. Ветер (скорость и направление)
+6. Давление
+7. Влажность
+8. Рассвет, закат
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Todo
 
-### `npm test`
+### links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://api.openweathermap.org/data/2.5/weather?q=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C&appid=dde4b5b2e6b7ec4f629ae01265eaa87d&units=metric
 
-### `npm run build`
+https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=dayli&appid=dde4b5b2e6b7ec4f629ae01265eaa87d&units=metric
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://openweathermap.org/api/one-call-api#data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://openweathermap.org/api/one-call-api
 
-### `npm run eject`
+https://openweathermap.org/current#parameter
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://www.youtube.com/watch?v=C5NjxM1dyxY
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+clouds: 100
+dew_point: 2.42
+dt: 1652169600
+feels_like: {day: 18.39, night: 12.32, eve: 13.26, morn: 9.02}
+humidity: 32
+moon_phase: 0.29
+moonrise: 1652169600
+moonset: 1652137860
+pop: 0.88
+pressure: 1009
+rain: 1.7
+sunrise: 1652140956
+sunset: 1652199665
+temp: {day: 19.54, min: 8.51, max: 19.54, night: 13.1, eve: 14.19, …}
+uvi: 3.53
+weather: Array(1)
+0: {id: 500, main: 'Rain', description: 'небольшой дождь', icon: '10d'}
+length: 1
+[[Prototype]]: Array(0)
+wind_deg: 99
+wind_gust: 14.58
+wind_speed: 6.58

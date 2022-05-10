@@ -1,0 +1,26 @@
+.hourly_item {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 64px;
+  height: 84px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+}
+.item_time {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.item_time:last-child {
+  padding-right: 0px;
+}
+.item_icon {
+}
+.item_temp {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
