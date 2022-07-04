@@ -1,21 +1,38 @@
-### Функционал
+# Openweather app
 
-1. По умолчанию отображать инфу по гео
-2. Прогноз на день (по часам, температура и иконка)
-3. Прогноз на неделю (мин и макс, день недели)
-4. Поиск по городу
+## 📣 Contents
 
-### Инфа
+- [About](#about)
+- [Installing](#installing)
+- [Built Using](#built_using)
 
-1. Город
-2. Температура
-3. Ощущается как
-4. Описание (облачно, ясно и т.д.)
-5. Ветер (скорость и направление)
-6. Давление
-7. Влажность
-8. Рассвет, закат
+## 🌞 About <a name = "about"></a>
 
-### Links
+Web app that allow you to get weather forecast in your city or whereever you want.
 
-https://github.com/trekhleb/use-position
+## 🌈 Getting Started <a name = "installing"></a>
+
+Go to project folder and type in console:
+
+```
+git clone https://github.com/sklvv/openweather-app.git
+```
+
+Visit [openweather](https://openweathermap.org/api) to get your API key.
+Make an .env file in the root of your project and type:
+
+```
+REACT_APP_API_KEY = YOUR_API_KEY
+```
+
+Install dependencies with:
+
+```
+npm install
+```
+
+Start dev server:
+
+```
+npm start
+```
