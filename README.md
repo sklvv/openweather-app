@@ -22,7 +22,7 @@ Visit [openweather](https://openweathermap.org/api) to get your API key.
 Make an .env file in the root of your project and type:
 
 ```
-REACT_APP_API_KEY = YOUR_API_KEY
+VITE_OW_API_KEY = YOUR_API_KEY
 ```
 
 Install dependencies with:
