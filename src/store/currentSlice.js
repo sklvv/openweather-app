@@ -6,7 +6,9 @@ export const getWeather = createAsyncThunk(
   "current/getWeather",
   async (value) => {
     const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${process.env.REACT_APP_API_KEY}&lang=ru&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${
+        import.meta.env.VITE_OW_API_KEY
+      }&lang=ru&units=metric`
     );
 
     const answer = await response.data;
@@ -16,10 +18,16 @@ export const getWeather = createAsyncThunk(
 export const getWeatherByLocation = createAsyncThunk(
   "current/getWeatherByLocation",
   async ({ lat, lon }) => {
-    const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY}&lang=ru&units=metric`
-    );
-    return response.data;
+    try {
+      const response = await axios.get(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${
+          import.meta.env.VITE_OW_API_KEY
+        }&lang=ru&units=metric`
+      );
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
   }
 );
 export const currentSlice = createSlice({

@@ -7,7 +7,9 @@ export const getDailyForecast = createAsyncThunk(
   "daily/getDailyForecast",
   async ({ lat, lon }) => {
     const answer = await axios.get(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=weekly&appid=${process.env.REACT_APP_API_KEY}&units=metric&lang=ru`
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=weekly&appid=${
+        import.meta.env.VITE_OW_API_KEY
+      }&units=metric&lang=ru`
     );
     return answer.data.daily;
   }
@@ -17,14 +19,20 @@ export const refreshDailyForecast = createAsyncThunk(
   "daily/refreshDailyForecast",
   async (value) => {
     const getLatlon = await axios.get(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=${process.env.REACT_APP_API_KEY}`
+      `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=${
+        import.meta.env.VITE_OW_API_KEY
+      }`
     );
     const coord = {
       lat: getLatlon.data[0].lat,
       lon: getLatlon.data[0].lon,
     };
     const answer = await axios.get(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&exclude=weekly&appid=${process.env.REACT_APP_API_KEY}&units=metric&lang=ru`
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${
+        coord.lon
+      }&exclude=weekly&appid=${
+        import.meta.env.VITE_OW_API_KEY
+      }&units=metric&lang=ru`
     );
 
     return answer.data.daily;

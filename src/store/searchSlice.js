@@ -4,7 +4,9 @@ export const checkWeather = createAsyncThunk(
   "search/checkWeather",
   async (value) => {
     const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${process.env.REACT_APP_API_KEY}&lang=ru&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${
+        import.meta.env.VITE_OW_API_KEY
+      }&lang=ru&units=metric`
     );
     console.log(response);
   }
